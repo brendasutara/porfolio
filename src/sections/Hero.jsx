@@ -2,10 +2,10 @@ import { useRef } from "react";
 import { AnimatedTextLines } from "../components/AnimatedTextLines";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Planet } from "../components/Planet";
 import { Canvas } from "@react-three/fiber";
 import { Environment, Float, Lightformer } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
+import { CloudRing } from "../components/CloudRing";
 
 const Hero = () => {
   const contextRef = useRef(null);
@@ -47,13 +47,14 @@ const Hero = () => {
               404 No Bugs Found/
             </p>
             <div className="px-10">
-              <h1 className="flex flex-col flex-wrap mb-1 md:mb-2 text-black uppercase banner-text-responsive md:gap-16 md:block">
-                Bren sutara
+              <h1 className="flex flex-col md:flex-row md:gap-x-6 text-black uppercase banner-text-responsive">
+                <span className="block">Bren </span>
+                <span className="block">Sutara</span>
               </h1>
             </div>
           </div>
         </div>
-        <div className="relative px-10 text-black">
+        <div className="relative -mt-2 px-10 text-black sm:-mt-4">
           <div className="absolute inset-x-0 border-t-2" />
           <div className="py-12 sm:py-16 text-end">
             <AnimatedTextLines
@@ -67,36 +68,66 @@ const Hero = () => {
         className="absolute inset-0 -z-50"
         style={{ width: "100vw", height: "100vh" }}
       >
-        <Canvas shadows camera={{ position: [0, 0, -10], fov: 17.5, near: 1 }}>
-          <ambientLight intensity={0.5} />
+        <Canvas
+          shadows
+          camera={{ position: [0, 0, 10], fov: 17.5, near: 0.1, far: 100 }}
+        >
+          <color attach="background" args={["#c8c5b8"]} />
+
+          <ambientLight intensity={0.2} />
+
+          <directionalLight
+            position={[4, 6, 5]}
+            intensity={2}
+            color="#ffffff"
+          />
+
+          <directionalLight
+            position={[-5, 2, 3]}
+            intensity={0.7}
+            color="#dfe6ee"
+          />
+
+          <directionalLight
+            position={[0, 1, -6]}
+            intensity={1.1}
+            color="#fff6ed"
+          />
+
           <Float speed={0.5}>
-            <Planet scale={isMobile ? 0.7 : 1} />
+            <CloudRing scale={isMobile ? 0.12 : 0.4} />
+            //todo Dar credito recordar{" "}
+            {/* <p class="text-xs opacity-60">
+              {" "}
+              3D model "Cloud Ring" by Node_λrt via Sketchfab — CC BY 4.0{" "}
+            </p> */}
           </Float>
-          <Environment resolution={256}>
+
+          <Environment resolution={512}>
             <group rotation={[-Math.PI / 3, 4, 1]}>
               <Lightformer
-                form={"circle"}
-                intensity={2}
+                form="circle"
+                intensity={4}
                 position={[0, 5, -9]}
                 scale={10}
               />
               <Lightformer
-                form={"circle"}
-                intensity={2}
-                position={[0, 3, 1]}
-                scale={10}
+                form="circle"
+                intensity={2.5}
+                position={[0, 3, 2]}
+                scale={8}
               />
               <Lightformer
-                form={"circle"}
+                form="circle"
                 intensity={2}
                 position={[-5, -1, -1]}
-                scale={10}
+                scale={8}
               />
               <Lightformer
-                form={"circle"}
-                intensity={2}
-                position={[10, 1, 0]}
-                scale={16}
+                form="circle"
+                intensity={2.5}
+                position={[8, 1, 2]}
+                scale={12}
               />
             </group>
           </Environment>

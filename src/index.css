@@ -116,7 +116,7 @@
 }
 
 body {
-  background: #e5e5e0;
+  background: radial-gradient(circle at center, #d5d2c8 0%, #bebaa9 100%);
   color: black;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -128,7 +128,7 @@ body {
 }
 
 @utility banner-text-responsive {
-  @apply text-[68px] sm:text-[118px] md:text-[126px] lg:text-[152px] leading-9 sm:leading-16 lg:leading-20;
+  @apply text-[68px] leading-[0.9] sm:text-[118px] sm:leading-[0.88] md:text-[126px] md:leading-[0.9] lg:text-[152px] lg:leading-[0.9];
 }
 
 @utility value-text-responsive {
