@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import { Navbar } from "./sections/Navbar";
 import { Services } from "./sections/Services";
 import { ServicesList } from "./sections/ServicesList";
+import { About } from "./sections/About";
 
 const App = () => {
   return (
@@ -11,6 +12,8 @@ const App = () => {
       <Hero />
       <ServicesList />
       <Services />
+      <About />
+      <section className="h-screen"></section>
     </ReactLenis>
   );
 };

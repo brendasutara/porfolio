@@ -47,18 +47,17 @@ export const ServicesList = () => {
       >
         <p className="font-normal">Aplicaciones Web</p>
         <div className="w-10 h-1 md:w-32 bg-primary" />
-        <p>Aplicaciones Móviles</p>
+
+        <p>APIs</p>
       </div>
 
       <div
         id="title-service-3"
         className="flex items-center justify-center gap-3 -translate-x-48"
       >
-        <p>APIs</p>
+        <p>Aplicaciones Móviles</p>
         <div className="w-10 h-1 md:w-32 bg-primary" />
-        <p className="italic">Interfaces Frontend</p>
-        <div className="w-10 h-1 md:w-32 bg-primary" />
-        <p>Experiencias Interactivas</p>
+        <p className="italic">Frontend</p>
       </div>
 
       <div id="title-service-4" className="translate-x-48">
