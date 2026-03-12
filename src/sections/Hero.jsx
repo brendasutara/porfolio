@@ -24,7 +24,9 @@ const Hero = () => {
         style={{ width: "100vw", height: "100vh" }}
       >
         <Canvas
-          shadows
+          dpr={isMobile ? 1 : [1, 1.5]}
+          gl={{ antialias: false, powerPreference: "high-performance" }}
+          performance={{ min: 0.5 }}
           camera={{ position: [0, 0, 10], fov: 17.5, near: 0.1, far: 100 }}
         >
           <ambientLight intensity={0.2} />
@@ -56,7 +58,7 @@ const Hero = () => {
             </p> */}
           </Float>
 
-          <Environment resolution={512}>
+          <Environment resolution={256}>
             <group rotation={[-Math.PI / 3, 4, 1]}>
               <Lightformer
                 form="circle"

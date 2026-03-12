@@ -105,7 +105,7 @@ export const projects = [
       "Sistema de gestión para operadores turísticos que permite administrar paquetes de aventura, reservas y entidades asociadas como hoteles y proveedores. Diseñé toda la experiencia UX/UI y desarrollé el MVP en React, incluyendo dashboard de métricas, creación y edición de paquetes, gestión de disponibilidad, reservas y visualización de actividades.",
     href: "",
     image: "/assets/projects/reservas.png",
-    bgImage: "/assets/backgrounds/mountains.jpg",
+    bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "TypeScript" },
@@ -121,7 +121,7 @@ export const projects = [
       "Landing page interactiva inspirada en experiencias visuales de Awwwards, desarrollada para explorar animaciones avanzadas en frontend. El proyecto incluye una escena animada con productos flotando, transiciones fluidas y microinteracciones utilizando GSAP. Fue desarrollado con React y Vite como experimento visual para aplicar animaciones modernas que pueden integrarse en sitios comerciales o campañas de marca.",
     href: "",
     image: "/assets/projects/spylt.png",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "Vite" },
@@ -137,7 +137,7 @@ export const projects = [
       "Experiencia interactiva en 3D centrada en física, movimiento y exploración de entornos con React Three Fiber. Desarrollé un personaje controlable en tercera persona con colisiones, salto, respawn y lógica de interacción, dentro de una escena low poly diseñada para practicar mecánicas de juego y comportamiento físico en web. Este proyecto me permitió profundizar en experiencias inmersivas y desarrollo frontend más allá de interfaces tradicionales.",
     href: "https://mini-marshmallow.netlify.app/",
     image: "/assets/projects/mini-marshmallow.png",
-    bgImage: "/assets/backgrounds/grid.jpg",
+    bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "React Three Fiber" },
@@ -152,8 +152,8 @@ export const projects = [
     description:
       "Experiencia interactiva en 3D centrada en física, movimiento y exploración de entornos con React Three Fiber. Desarrollé un personaje controlable en tercera persona con colisiones, salto, respawn y lógica de interacción, dentro de una escena low poly diseñada para practicar mecánicas de juego y comportamiento físico en web. Este proyecto me permitió profundizar en experiencias inmersivas y desarrollo frontend más allá de interfaces tradicionales.",
     href: "https://mini-marshmallow.netlify.app/",
-    image: "/assets/projects/mini-marshmallow.png",
-    bgImage: "/assets/backgrounds/grid.jpg",
+    image: "/assets/projects/medieval-town.png",
+    bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "React Three Fiber" },
@@ -185,7 +185,7 @@ export const projects = [
       "Este proyecto es un clon de Trello desarrollado en Angular con CDK Angular y estilizado con Tailwind CSS. Ofrece una experiencia similar a la de Trello, con funcionalidades de arrastrar y soltar, manejo de listas y tablas, además de mejoras en rendimiento y experiencia de usuario. Visita la demo en Vercel para verlo en acción.",
     href: "https://trello-clone-pi-eight.vercel.app/app/boards",
     image: "/assets/projects/trello.png",
-    bgImage: "/assets/backgrounds/grid.jpg",
+    bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
       { id: 1, name: "Angular" },
       { id: 2, name: "JavaScript" },
